@@ -82,6 +82,13 @@
         document.querySelector(".weather").style.display = "block";
         document.querySelector(".error").style.display = "none";
         }
+
+            searchbox.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    checkweather(searchbox.value);
+  }
+});
+
         
 
 
